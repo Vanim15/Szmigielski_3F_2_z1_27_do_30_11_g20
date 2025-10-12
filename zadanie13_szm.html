@@ -1,0 +1,42 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 13 – Ułamek egipski</title>
+</head>
+<body style="color:green; font-size:30px;">
+
+<script>
+    // Filip Szmigielski 3F 12.10.2025
+    // Zadanie 13 – Rozkład ułamka egipskiego na dwa ułamki egipskie
+
+    // Pobranie liczby m od użytkownika
+    var m_szm = prompt("Podaj wartość m:", "");
+
+    // Zamiana na liczbę
+    var m = parseFloat(m_szm);
+
+    // Sprawdzenie poprawności
+    if (isNaN(m) || m <= 0) {
+        document.write("Podano niepoprawną wartość m!");
+    } else {
+        // Obliczenia według wzoru:
+        // 1/m = 1/(m+1) + 1/(m*(m+1))
+        var ulamek1 = 1 / (m + 1);
+        var ulamek2 = 1 / (m * (m + 1));
+
+        document.write("<h2>Rozkład ułamka egipskiego:</h2>");
+        document.write("1/" + m + " = 1/" + (m + 1) + " + 1/" + (m * (m + 1)) + "<br><br>");
+        
+    }
+
+    // Przycisk zamknięcia
+    function okno_zamknij() {
+        window.close();
+    }
+</script>
+
+<br><br>
+<input type="button" value="Zamknij okno" onclick="okno_zamknij()"/>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+ <body>
+ <div style="color:green;font-size:33px;">
+    <script language="JavaScript">
+// Filip Szmigielski 3F 12.10.2025
+// Zadanie 12
+    var D1_szm=prompt("Numer dnia miesiaca=",""); //wartosc 1
+    var D2_szm=prompt("Numer dnia Miesiaca=","");
+    var G1_szm=prompt("Godzina1=","");
+    var G2_szm=prompt("Godzina2=","");
+    var sekund;
+    var a=parseFloat(D1_szm); //przypisywanie d1szm do a
+     var b=parseFloat(D2_szm); // przypisywanie d2szm do b
+     var c=parseFloat(G1_szm);
+     var d=parseFloat(G2_szm);
+    sekund=(a-b)*24*60*60 + (c-d)*60*60;
+
+     document.write("Ilość sekund między dniami "+a+" i "+b+" i godzinami "+c+" i "+d+" = "+sekund+" sekund <br>");
+    function okno_zamknij_szmi()
+    {
+    window.close()
+    }
+    </script>
+ </div>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_szmi()"/>
+ </body>
+</html>

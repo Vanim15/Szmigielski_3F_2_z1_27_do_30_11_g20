@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zagadnienia teoretyczne z JavaScript</title>
+</head>
+<body>
+
+<h2>Zagadnienia teoretyczne z JavaScript</h2>
+
+<p><b>1) Rodzaje okienek:</b></p>
+<p>W języku JavaScript występują trzy podstawowe <u>rodzaje okien dialogowych</u>:</p>
+<ul>
+  <li><b>Okienko confirm</b> – pozwala użytkownikowi potwierdzić lub anulować działanie (zwraca wartość true lub false).</li>
+  <li><b>Okienko alert</b> – wyświetla komunikat z przyciskiem OK.</li>
+  <li><b>Okienko prompt</b> – umożliwia wpisanie wartości przez użytkownika, która potem może być użyta w programie.</li>
+  
+</ul>
+
+<p><b>2) Konwersja liczb:</b></p>
+<p>Wartość odczytana za pomocą funkcji <b>prompt()</b> jest ciągiem znaków. Aby wykonać działania matematyczne, konieczne jest <u>przekształcenie tekstu na liczbę</u>.</p>
+<p>Do konwersji stosuje się następujące funkcje:</p>
+<ul>
+  
+  <li><b>parseInt(zmienna)</b> – zamienia tekst na liczbę całkowitą.</li>
+  <li><b>toString(zmienna)</b> – zamienia liczbę lub inną wartość na tekst.</li>
+  <li><b>parseFloat(zmienna)</b> – zamienia tekst na liczbę zmiennoprzecinkową, np. 3.14.</li>
+</ul>
+
+<p><b>3) Zasady nadawania nazw zmiennym:</b></p>
+<p>Podczas tworzenia zmiennych należy przestrzegać kilku zasad:</p>
+<ol>
+  <li>Nazwa zmiennej musi zaczynać się od litery, znaku „*” lub „&”. Nie może zaczynać się od cyfry.</li>
+  <li>Nazwa może zawierać tylko litery (bez polskich znaków), cyfry, „_” oraz „$”.</li>
+  <li>Nie wolno używać słów zarezerwowanych przez język JavaScript jako nazw zmiennych.</li>
+</ol>
+
+<p><b>Poprawne nazwy zmiennych:</b> zmienna1, _wynik, $gracz, liczba_test</p>
+<p><b>Błędne nazwy zmiennych:</b> 1zmienna, imię, wynik gry, var</p>
+
+<p><b>4) Typy zmiennych w JavaScript:</b></p>
+<p>W języku JavaScript typ zmiennej jest ustalany automatycznie po przypisaniu wartości.  
+Podstawowe typy danych to:</p>
+<ul>
+  <li><b>Number</b> – liczby całkowite i zmiennoprzecinkowe, np. 5, 3.14</li>
+  <li><b>String</b> – tekst, np. "Ala ma kota"</li>
+  <li><b>Boolean</b> – wartość logiczna: true lub false</li>
+  <li><b>Null</b> – pusta wartość</li>
+  <li><b>Undefined</b> – zmienna niezdefiniowana</li>
+  <li><b>Object</b> – typ złożony, pozwala przechowywać wiele danych</li>
+</ul>
+
+<p><b>Przykład:</b></p>
+<pre>
+let imie = "Igor";
+let wiek = 14;
+let pelnoletni = false;
+</pre>
+
+
+
+</body>
+</html>
