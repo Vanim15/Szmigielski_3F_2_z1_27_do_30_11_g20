@@ -1,0 +1,1 @@
+# Szmigielski_3F_2_z1_16_do_12_10_g20
