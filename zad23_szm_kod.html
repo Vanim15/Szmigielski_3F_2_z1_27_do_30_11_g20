@@ -1,0 +1,72 @@
+<html>
+<body>
+<textarea cols="90" rows="24">
+<!DOCTYPE html>   
+<head>    
+<title> Drabina i kąt</title>    
+<meta charset="utf-8">   
+<style>
+	b{
+		font-size: 34px ;
+	}
+</style>
+<script language="JavaScript">
+	
+	function Drabina(D,X)
+	{
+		d=parseFloat(D)
+		x=parseFloat(X)
+		Drabina_dl=Math.sqrt((d*d)+(x*x))
+		document.getElementsByName("drab")[0].value=Drabina_dl.toFixed(2);
+		alert("Drabina="+Drabina_dl.toFixed(2)+"cm");
+		pokaz1.innerHTML="Drabina="+Drabina_dl.toFixed(2)+"cm";
+	}
+	function Alfa(D,X)
+	{
+		d=parseFloat(D)
+		x=parseFloat(X)
+		var SinA = d/Math.sqrt((d*d)+(x*x));
+		var aRad = Math.asin(SinA);
+		var aDeg = aRad * (180 / Math.PI);
+		Alfa_dl=aDeg;
+		document.getElementsByName("alfa")[0].value=Alfa_dl.toFixed(2);
+		alert("Alfa="+Alfa_dl.toFixed(2)+"cm");
+		pokaz2.innerHTML="Alfa="+Alfa_dl.toFixed(2)+"cm";
+	}
+	function okno_zamknij_szm()  
+ 		{ 
+ 		window.close() 
+ 		} 
+</script>
+</head>
+<body>
+<b>Obliczenia drabin i kątów, Komunikaty przez alert, tabelę i input</b>
+<br><br>
+<form name="formularz" action="" onsubmit="Drabina(this.bok_d.value,this.bok_x.value);Alfa(this.bok_d.value,this.bok_x.value);return false">
+Podaj d=
+<input size="4" name="bok_d">
+Podaj x=
+<input size="4" name="bok_x">
+<br><br>
+
+<input type="submit" value="oblicz">
+<br>
+drabina=<input type="text" name="drab" readonly><br> <br> <br>
+alfa=<input type="text" name="alfa" readonly><br>
+
+
+</form>
+<table id="wyniki">
+<tr>
+<td id="pokaz1"></td>
+</tr>
+<tr>
+<td id="pokaz2"></td>
+</tr>
+</table>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_szm()"/>
+</body>
+</html>
+</textarea>
+	</body>
+	</html>

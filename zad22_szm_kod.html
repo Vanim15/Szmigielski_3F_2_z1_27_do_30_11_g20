@@ -1,0 +1,55 @@
+<html>
+<body>
+<textarea cols="90" rows="24">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zadanie22 – Obliczanie pola i obwodu</title>
+    <script>
+        function Pole_szmigielski(a_szm, b_szm) {
+            return a_szm * b_szm;
+        }
+
+        function obwod_szmigielski(a_szm, b_szm) {
+            return 2 * (a_szm + b_szm);
+        }
+
+        function licz() {
+            // Pobranie danych z formularza
+            let a_szm = parseFloat(document.getElementById("a_dana_szm").value);
+            let b_szm = parseFloat(document.getElementById("b_dana_szm").value);
+
+            // Obliczenia
+            let pole = Pole_szmigielski(a_szm, b_szm);
+            let obw = obwod_szmigielski(a_szm, b_szm);
+
+            // Wyświetlenie wyników
+            document.getElementById("wyprowadz_pole_szm").value = pole;
+            document.getElementById("wyprowadz_obwod_szm").value = obw;
+        }
+    </script>
+</head>
+<body>
+<h2>Oblicz pole i obwód prostokąta</h2>
+
+<form>
+    <label>Długość a:</label>
+    <input type="number" id="a_dana_szm" step="any"><br><br>
+
+    <label>Długość b:</label>
+    <input type="number" id="b_dana_szm" step="any"><br><br>
+
+    <input type="button" value="Oblicz" onclick="licz()"><br><br>
+
+    <label>Pole:</label>
+    <input type="text" id="wyprowadz_pole_szm" readonly><br><br>
+
+    <label>Obwód:</label>
+    <input type="text" id="wyprowadz_obwod_szm" readonly><br>
+</form>
+</body>
+</html>
+
+</textarea>
+	</body>
+	</html>
