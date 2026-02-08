@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Zadanie – programowanie obiektowe</title>
+
+<script type="text/javascript">
+
+var ruter = {
+    rodzaj: 'bezprzewodowy',
+    kolor: 'biały',
+    firma: 'Orange',
+    pokaz: function () {
+        document.write(
+            "rodzaj: " + this.rodzaj + "<br>" +
+            "kolor: " + this.kolor + "<br>" +
+            "firma: " + this.firma + "<br>"
+        );
+    }
+};
+
+
+ruter.pokaz();
+
+ruter.wlasciciel = "Szmigielski";
+
+
+ruter.wypisz = function () {
+    document.write("Właściciel: " + this.wlasciciel + "<br>");
+};
+
+ruter.wypisz();
+
+</script>
+</head>
+
+<body>
+<br>
+<b>Programowanie obiektowe</b><br><br>
+
+Obiekt: <b>ruter</b><br><br>
+
+Pola obiektu:<br>
+rodzaj<br>
+kolor<br>
+firma<br><br>
+
+Metoda obiektu:<br>
+wypisz()<br><br>
+
+Nowe pole (poza ciałem obiektu):<br>
+wlasciciel()<br><br>
+
+Nowa metoda:<br>
+ruter.wypisz()<br>
+
+</body>
+</html>

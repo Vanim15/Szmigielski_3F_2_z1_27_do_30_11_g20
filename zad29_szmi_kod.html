@@ -1,0 +1,98 @@
+<html>
+<body>
+<textarea cols="90" rows="24">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 29 – Filip Szmigielski 3F</title>
+
+<style>
+body {
+    font-family: Verdana, sans-serif;
+    background-color: #e8f0ff;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 20px;
+    color: #1a237e;
+    border-left: 6px solid #3949ab;
+    padding-left: 10px;
+}
+
+.section {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.code {
+    background-color: #f3f3f3;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: Consolas, monospace;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Zadanie 29 – Filip Szmigielski 3F</h1>
+
+<div class="section">
+<b>1. W jaki sposób można określić właściwość danego obiektu?</b><br><br>
+
+<b>Sposób 1 – notacja kropkowa:</b><br>
+a) dla tekstu:<br>
+auto.marka = "Opel Omega";<br><br>
+
+b) dla liczb:<br>
+auto.rok = 1996;<br>
+auto.cena = 25000;<br><br>
+
+<b>Sposób 2 – notacja tablicowa:</b><br>
+auto["cena"] = 25000;
+</div>
+
+<div class="section">
+<b>2. W jaki sposób można odwołać się do pól (właściwości) i metod?</b><br><br>
+Do pól i metod obiektu odwołujemy się przez nazwę obiektu i kropkę.<br><br>
+Przykład:<br>
+console.log(samochod1.kolor); – wyświetla kolor obiektu.
+</div>
+
+<div class="section">
+<b>3. Wymień cechy charakterystyczne konstruktora</b>
+<ul>
+<li>jest wywoływany automatycznie przy tworzeniu obiektu,</li>
+<li>ma taką samą nazwę jak klasa,</li>
+<li>nie zwraca żadnej wartości,</li>
+<li>może przyjmować argumenty,</li>
+<li>do tworzenia obiektu używa się słowa kluczowego <b>new</b>.</li>
+</ul>
+</div>
+
+<div class="section">
+<b>4. Konstruowanie obiektu – przykład</b><br><br>
+
+<div class="code">
+var osoba_1 = {<br>
+&nbsp;&nbsp;nazwisko: "Kowalski",<br>
+&nbsp;&nbsp;imie: "Jan",<br>
+&nbsp;&nbsp;zawod: "piekarz",<br>
+&nbsp;&nbsp;wyswietl: function() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;document.write(this.nazwisko + " " + this.imie);<br>
+&nbsp;&nbsp;}<br>
+}
+</div>
+</div>
+
+</body>
+</html>
+
+</textarea>
+	</body>
+	</html>
